@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Karol Belina &mdash; home</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            html, body, .left, .right {
+                height: 100%;
+            }
+
+            body {
+                display: flex;
+                margin: 0;
+                font-family: "IBM Plex Mono", monospace;
+            }
+
+            .left, .right {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+            }
+
+            .right {
+                background-color: black;
+            }
+
+            h1 {
+                color: black;
+                font-size: 8vw;
+                font-weight: bold;
+                text-align: center;
+                line-height: 1em;
+            }
+
+            h1::selection, br::selection {
+                color: white;
+                background-color: black;
+            }
+
+            .list {
+                display: flex;
+                flex-direction: column;
+            }
+
+            a {
+                color: white;
+                font-size: 3vw;
+                text-decoration: none;
+            }
+
+            a::selection {
+                color: black;
+                background-color: white;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+            
+            @media (max-aspect-ratio: 1/1) {
+                body {
+                    flex-direction: column;
+                }
+
+                h1 {
+                    font-size: calc(6vw + 6vh);
+                }
+
+                a {
+                    font-size: calc(2vw + 2vh);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="left">
+            <h1>Karol<br>Belina</h1>
+        </div>
+        <div class="right">
+            <div class="list">
+                <a href="mailto:karolbelina@gmail.com">email</a>
+                <a href="https://github.com/karolbelina">github</a>
+                <a href="https://twitter.com/karolbelina">twitter</a>
+                <a href="https://karolbelina.itch.io/">itch</a>
+                <a href="https://www.linkedin.com/in/karolbelina/">linkedin</a>
+            </div>
+        </div>
+    </body>
+</html>
